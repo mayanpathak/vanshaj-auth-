@@ -107,4 +107,5 @@ app.listen(PORT, () => {
   connectDB();
   console.log(`Server is running on port: ${PORT}`);
   console.log(`Allowed origins: ${allowedOrigins.join(', ')}`);
-});
+}); 
+// all the best for the project
