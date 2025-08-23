@@ -84,7 +84,7 @@ import {
 		from: `${sender.name} <${sender.email}>`,
 		to: email,
 		subject: "Welcome to Auth Company",
-		html: welcomeEmailHtml,
+		html: WELCOME_EMAIL_TEMPLATE.replace("{name}", name),
 	  };
   
 	  const response = await transporter.sendMail(mailOptions);
